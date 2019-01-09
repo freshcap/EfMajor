@@ -1,7 +1,7 @@
 # EfMajor
 Entity Framework Core generic base classes for a developer friendly implementation.
 
-The Unit of Work represents an instance of the DbContext for a specific database, and should be short-lived within the scope of its context. A common use case in an API would inject the UOW into your services - it will stay alive and then be disposed within each API call.
+The Unit of Work represents an instance of the DbContext for a specific database, and should be short-lived within the scope of its context. A common use case in an API would inject the UOW into your services with a scoped lifetime - it will stay alive and then be disposed within each API call.
 
 This library uses a repository/unit-of-work pattern, taking advantage of the built-in Entity Framework functionality. Take a look in the test project at the QueryTests class for what developer code might look like.
 
